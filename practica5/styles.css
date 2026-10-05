@@ -1,0 +1,93 @@
+
+:root {
+  font-family: system-ui, sans-serif;
+  color: #14213d;
+  background: #eef5ff;
+}
+body {
+  margin: 0;
+  padding: 25px;
+}
+.panel {
+  width: min(100%, 1000px);
+  margin: auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 16px 35px #14213d18;
+}
+.eyebrow {
+  color: #2563eb;
+  font-weight: 800;
+}
+form {
+  display: flex;
+  gap: 8px;
+}
+input,
+select,
+button {
+  padding: 11px;
+  border: 1px solid #b9c9df;
+  border-radius: 8px;
+  font: inherit;
+}
+button {
+  color: #fff;
+  border: 0;
+  background: #2563eb;
+}
+.tablero {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 14px;
+  margin-top: 22px;
+}
+.tablero > div {
+  min-height: 220px;
+  padding: 14px;
+  border-radius: 10px;
+  background: #eaf2ff;
+}
+.tarjeta {
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 3px 8px #14213d18;
+}
+.tarjeta button {
+  margin-top: 8px;
+  padding: 6px 8px;
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(20, 33, 61, 0.35);
+}
+.modal-contenedor {
+  width: min(90vw, 340px);
+  padding: 20px;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 20px 45px rgba(20, 33, 61, 0.2);
+}
+.modal-contenedor h3 {
+  margin-top: 0;
+}
+.input-editar {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 10px 0 16px;
+}
+.modal-botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+.modal-botones button {
+  margin-top: 0;
+}

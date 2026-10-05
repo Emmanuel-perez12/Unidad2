@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="app.js" defer></script>
+    <title>Cards de tarjetas Kanban</title>
+</head>
+
+<body>
+    <main class="panel">
+        <p class="eyebrow">Ejercicio Cards Kanban</p>
+        <h1>Tablero de actividades</h1>
+
+        <form id="formulario">
+            <input name="titulo" placeholder="Nueva tarjeta" required autocomplete="off" />
+            <select name="estado" required>
+                <option value="pendiente">Pendiente</option>
+                <option value="proceso">En proceso</option>
+                <option value="done">Terminado</option>
+            </select>
+            <button type="submit">Agregar</button>
+        </form>
+
+        <section class="tablero">
+            <div class="columna">
+                <h2>Pendiente</h2>
+                <section id="pendiente" class="zona" data-estado="pendiente"></section>
+            </div>
+            <div class="columna">
+                <h2>En proceso</h2>
+                <section id="proceso" class="zona" data-estado="proceso"></section>
+            </div>
+            <div class="columna">
+                <h2>Terminado</h2>
+                <section id="done" class="zona" data-estado="done"></section>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
